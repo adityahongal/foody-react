@@ -1,0 +1,22 @@
+{
+  "name": "foody-react",
+  "version": "1.0.0",
+  "description": "Foody site",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityahongal/foody-react.git"
+  },
+  "author": "Aditya Hongal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityahongal/foody-react/issues"
+  },
+  "homepage": "https://github.com/adityahongal/foody-react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
