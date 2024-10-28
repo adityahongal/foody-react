@@ -1,41 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import logo from "./assets/logo.svg"
 
-const header = React.createElement(
-  "h1",
-  { id: "header" },
-  "Header is Showing..."
-);
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src={logo} alt="foody-logo"/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
 
-// console.log(header)
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// root.render(header);
-
-// Nested structure inside react
-
-// in html it is written as
-// <div id="Parent">
-//  <div id="Child">
-//      <h1>this is H1 tag</h1>
-//      <h1>this is H2 tag</h1>
-//  </div>
-// </div>
-
-// In React this can be written as
-
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [                  // Array of childrens
-    React.createElement("h1", {}, "This is h1 tag"),
-    React.createElement("h2", {}, "This is h2 tag"),
-  ])
-);
-
-console.log(parent); //object
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header/>
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<AppLayout/>);
