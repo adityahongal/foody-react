@@ -20,13 +20,13 @@ const Header = () => {
     )
 }
 
-const RestaurantCard = () => {
+const RestaurantCard = ( {resName, cuisine, resStar} ) => {
     return (
         <div className="res-card">
             <img className="res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/lufqwcvjqllfw24ab82x" alt="res-logo"/>
-            <h3>Mani's Dum Biriyani</h3>
-            <h4>Biriyani, South Indian, Asian</h4>
-            <h4>4.4 stars</h4>
+            <h3>{resName}</h3>
+            <h4>{cuisine}</h4>
+            <h4>{resStar} stars</h4>
             <h4>29 minutes</h4>
         </div>
     )
@@ -37,10 +37,10 @@ const Body = () => {
         <div className="body">
             <div className="search">Search</div>
             <div className="res-container">
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
+                <RestaurantCard resName="Mani's Dum Biriyani" cuisine="Biriyani, South Indian" resStar="4.4"/>
+                <RestaurantCard resName="KFC" cuisine="Chicken Snacks, Fast Food" resStar="3.9"/>
+                <RestaurantCard resName="Domino's" cuisine="Pizza, Italian" resStar="3.8"/>
+                <RestaurantCard resName="Altaf Egg Rice" cuisine="Biriyani, Karnataka food" resStar="4.1"/>
             </div>
         </div>
     )
