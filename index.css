@@ -7,6 +7,13 @@
     left: 0;
     width: 100%;
     padding: 10px;
+    border: 1px solid black;
+    background-color: azure;
+    z-index: 1000;
+}
+
+.body {
+    margin-top: 100px;
 }
 
 .logo-container {
@@ -24,6 +31,8 @@
     display: flex;
     list-style-type: none;
     padding: 0;
+    font-size: 24px;
+    font-family: B612 mono;
 }
 
 .nav-items > ul {
@@ -36,4 +45,35 @@
 .nav-items > ul > li {
     padding: 10px;
     margin: 10px;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card {
+    margin: 5px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    padding: 5px;
+}
+
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-logo{
+    width: 190px;
+    padding: 5px;
+    border-radius: 10px;
 }
